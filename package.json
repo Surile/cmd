@@ -1,0 +1,21 @@
+{
+  "name": "cmd",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "precommit": "lint-staged"
+  },
+  "bin": {
+    "create": "./index.js"
+  },
+  "devDependencies": {
+    "commander": "^2.17.1",
+    "strip-json-comments": "^2.0.1",
+    "yamljs": "^0.3.0"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "prettier": "^1.14.3"
+  }
+}
