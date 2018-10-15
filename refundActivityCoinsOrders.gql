@@ -1,0 +1,27 @@
+query(
+  $createdAtFrom: DateTime
+  $createdAtTo: DateTime
+  $status: RefundActivityCoinsOrderStatusEnum
+  $merchantId: Int
+  $activityId: Int
+  $rechargeOrderId: Int
+  $orderId: String
+  $brandName: String
+  $page: Int
+  $perPage: Int
+) {
+  refundActivityCoinsOrders(
+    createdAtFrom: $createdAtFrom
+    createdAtTo: $createdAtTo
+    status: $status
+    merchantId: $merchantId
+    activityId: $activityId
+    rechargeOrderId: $rechargeOrderId
+    orderId: $orderId
+    brandName: $brandName
+    page: $page
+    perPage: $perPage
+  ) {
+    total
+  }
+}

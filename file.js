@@ -46,7 +46,7 @@ const findApiName = (name, request) => {
 
   if (request === 'query') {
     fs.writeFile(
-      `${name}.js`,
+      `${name}.gql`,
       `
         query(
           ${graphql_func_form}
@@ -54,7 +54,7 @@ const findApiName = (name, request) => {
           ${name}(
             ${graphql_form}
           ){
-
+            total
           }
         }
       `,
